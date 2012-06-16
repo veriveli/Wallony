@@ -1,0 +1,27 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"
+>
+
+<hibernate-configuration>
+    <session-factory>
+	    <!-- properties -->
+	    <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+	    
+		<property name="show_sql">false</property>
+		<property name="use_outer_join">true</property>
+		
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.HashTableCacheProvider</property>
+		<property name="hibernate.cache.use_second_level_cache">false</property>
+        <property name="hibernate.cache.use_query_cache">false</property>
+        <property name="hbm2ddl.auto">update</property>
+
+        <mapping class="com.wallony.object.Messages"/>
+        <mapping class="com.wallony.object.PaymentResult"/>
+        <mapping class="com.wallony.object.SaleProduct"/>
+        <mapping class="com.wallony.object.IpLocation"/>
+        <mapping class="com.wallony.object.Photo"/>
+        <mapping class="com.wallony.object.Video"/>
+        <!-- DEVELEOPMENT MODE  -->
+    </session-factory>
+</hibernate-configuration>

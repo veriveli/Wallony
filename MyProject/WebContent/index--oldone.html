@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.bar {
+	background: none repeat scroll 0 0 #F1F1F1;
+    border-bottom: 1px solid #E5E5E5;
+    height: 71px;
+    overflow: hidden;
+
+}.logo {
+    float: left;
+    margin: 10px 150px 20px;
+	width:270px;
+	
+	
+}
+
+.login {
+    float:right;
+    margin: 20px 140px 20px;
+	width:200px;
+	
+}
+/* REGULAR */
+
+button.regular, .buttons a.regular{
+    color:#336699;
+	width:100px;
+	height:30px;
+	background-color:#D0EFFF;
+	    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#D14836;
+    border:1px solid #f65e4b;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:12px;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+	-moz-border-radius-bottomleft:1px;
+	-moz-border-radius-bottomright:1px;
+	-moz-border-radius-topleft:1px;
+	-moz-border-radius-topright:1px;
+	border-top-right-radius: 1px 1px;
+	border-top-left-radius: 1px 1px;
+	border-bottom-left-radius: 1px 1px;
+	border-bottom-right-radius: 1px 1px;
+	width:100px;
+	height:30px;
+}
+.buttons a.regular:hover, button.regular:hover{
+    background-color:#ae1d0a;
+     border:1px solid #f65e4b;
+    color:#FFFFFF;
+	width:100px;
+	height:30px;
+}
+.buttons a.regular:active{
+    background-color:#6299c5;
+     border:1px solid #f65e4b;
+    color:#fff;
+	width:100px;
+	height:30px;
+}
+.box {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border: 1px solid #E5E5E5;
+    margin: 6px 2px 0;
+	float: left;
+    padding: 5px 5px 5px;
+	width:300px;
+}
+.lokasyon {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+}
+.lokasyon_1 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+	color:#F00;
+}
+.lokasyon_2 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+	color:#09F;
+}
+
+.lokasyon_3 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+	color:#66CC33;
+}
+.user_name {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color:#626365;
+}
+.time {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	color:#858383;
+}
+.text {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color:#000000;
+}
+.yorum{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color:#999;
+	width:285px;
+	}
+.text_com{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color:#6A6557
+	}
+
+</style>
+</head>
+
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<div class="bar">
+
+
+  <div class="logo"><img src="../images/logo.png" width="179" height="56" align="right" />
+  </div>
+  
+  
+  <div class="login">
+    <button type="submit" class="regular" name="yeni" value="Baştan Başla" onclick="kontrolEt();">
+        GİRİŞ YAP
+    </button>
+  </div>
+
+</div>
+
+<div>
+<table align="center">
+<tr>
+<td valign="top">
+<div id="1" class="box">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><table width="100%" border="0">
+        <tr>
+          <td width="31"><img src="../images/nokta.png" width="31" height="44" /></td>
+          <td width="187" class="lokasyon">Türkiye</td>
+          <td width="62" class="lokasyon_1">+ ekle</td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><hr size="1" color="#d9d4d4"></td>
+    </tr>
+    
+    
+    <tr>
+      <td>
+      <table width="100%" border="0">
+        <tr>
+          <td width="15%" rowspan="2" valign="top"><img src="../images/veli.jpg" width="40" height="40" /></td>
+          <td width="59%" class="user_name">Veli Coşkun</td>
+          <td width="26%" align="right" class="time">2 dk önce</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text">Arkadaşlar Merhaba nasılsınız herşey yolundamı kendinize iyi bakın görüşmek üzere</td>
+          </tr>
+      </table></td>
+    </tr>
+         <tr>
+          <td colspan="3" valign="top">
+          <input type="text" onblur="if(this.value=='') this.value='Yorum ?';" onfocus="this.value = '';" value="Yorum yaz.." title="3-mail" size="30" id="email" name="email" maxlength="100" class="yorum"></td>
+          </tr>
+    <tr>
+      <td><hr size="1" color="#d9d4d4"></td>
+    </tr>
+     <tr>
+      <td align="center"><img src="../images/resim.jpg" width="293" height="261" /></td>
+    </tr>
+    
+        <tr>
+      <td>
+      <table width="100%" border="0">
+        <tr>
+          <td width="15%" rowspan="2" valign="top"><img src="../images/gokhanalpaslan.png" width="40" height="40" /></td>
+          <td width="59%" class="user_name">Gökhan Alpaslan</td>
+          <td width="26%" align="right" class="time">2 dk önce</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text">Arkadaşlar Merhaba nasılsınız herşey yolundamı kendinize iyi bakın görüşmek üzere</td>
+          </tr>
+        <tr>
+          <td colspan="3" valign="top">
+          <input type="text" onblur="if(this.value=='') this.value='Yorum ?';" onfocus="this.value = '';" value="Yorum yaz.." title="3-mail" size="30" id="email" name="email" maxlength="100" class="yorum"></td>
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><hr size="1" color="#d9d4d4"></td>
+    </tr>
+    
+        <tr>
+      <td>
+      <table width="100%" border="0">
+        <tr>
+          <td width="15%" rowspan="2" valign="top"><img src="../images/gokhanalpaslan.png" width="40" height="40" /></td>
+          <td width="59%" class="user_name">Gökhan Alpaslan</td>
+          <td width="26%" align="right" class="time">2 dk önce</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text">Arkadaşlar Merhaba nasılsınız herşey yolundamı kendinize iyi bakın görüşmek üzere</td>
+          </tr>
+      </table></td>
+    </tr>
+       <tr>
+      <td><hr size="1" color="#d9d4d4"></td>
+    </tr>
+      <tr>
+      <td><table width="100%" border="0">
+        <tr>
+          <td width="15%" align="right" valign="top"><img src="../images/kafa.jpg" width="30" height="30" /></td>
+          <td class="text_com"><b>Ali Türkmen : </b>Merhaba lar çok güzel gözüküyor iyi çalışmalar</td>
+        </tr>
+        </table></td>
+    </tr>
+       <tr>
+          <td colspan="3" valign="top">
+          <input type="text" onblur="if(this.value=='') this.value='Yorum ?';" onfocus="this.value = '';" value="Yorum yaz.." title="3-mail" size="30" id="email" name="email" maxlength="100" class="yorum"></td>
+          </tr>
+    <tr>
+      <td><hr size="1" color="#d9d4d4"></td>
+    </tr>
+    
+  </table>
+</div>
+
+</td>
+<td valign="top">
+<div id="1" class="box">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><table width="100%" border="0">
+        <tr>
+          <td width="31"><img src="../images/nokta.png" width="31" height="44" /></td>
+          <td width="187" class="lokasyon">İstanbul</td>
+          <td width="62" class="lokasyon_2">+ ekle</td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><hr size="1" color="#d9d4d4"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+</table>
+ 
+</div>
+</td>
+<td valign="top">
+<div id="1" class="box">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><table width="100%" border="0">
+        <tr>
+          <td width="31"><img src="../images/nokta.png" width="31" height="44" /></td>
+          <td width="187" class="lokasyon">Feza Gazetelecilik</td>
+          <td width="62" class="lokasyon_3">+ ekle</td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><hr size="1" color="#d9d4d4"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+
+</div></td>
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>
